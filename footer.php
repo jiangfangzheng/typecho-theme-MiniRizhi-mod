@@ -1,12 +1,17 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
     <footer id="footer">
     <p><?php $this->options->links(); ?></p>
-            &copy; <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title(); ?></a>. 主题:<a target="_blank" href="https://minirizhi.com">日志</a>
+    Powered by <a target="_blank" href="http://typecho.org/">Typecho</a> | Theme by <a target="_blank" href="https://minirizhi.com">MiniRizhi</a> 
     <?php $this->options->tongji(); ?>
     </footer>
 </div>
 
-<div id="cornertool"><ul><li id="top" class="hidden"></li><li id="DarkModeButton" onclick = "switchNightMode()" class="">◐</li></ul></div>
+<div id="cornertool">
+	<ul>
+		<li id="top" class="hidden"></li>
+		<!--<li id="DarkModeButton" onclick = "switchNightMode()" class="">◐</li>-->
+	</ul>
+</div>
 <script src="<?php $this->options->themeUrl('/js/rizhi.js'); ?>"></script>
 
 <?php if ($this->options->mulu): ?><script>var cornertool=true;function cl(){var a=document.getElementById("catalog-col"),b=document.getElementById("catalog"),c=document.getElementById("cornertool"),d;if(a&&!b){if(c){c=c.getElementsByTagName("ul")[0];d=document.createElement("li");d.setAttribute("id","catalog");d.setAttribute("onclick","Catalogswith()");d.appendChild(document.createElement("span"));c.appendChild(d)}else{cornertool=false;c=document.createElement("div");c.setAttribute("id","cornertool");c.innerHTML='<ul><li id="catalog" onclick="Catalogswith()"><span></span></li></ul>';document.body.appendChild(c)}document.getElementById("catalog").className=a.className}if(!a&&b){cornertool?c.getElementsByTagName("ul")[0].removeChild(b):document.body.removeChild(c)}if(a&&b){b.className=a.className}}cl();</script><?php endif; ?>

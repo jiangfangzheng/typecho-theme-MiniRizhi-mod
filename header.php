@@ -14,7 +14,10 @@
             'author'    =>  _t('%s 发布的文章')
         ), '', ' - '); ?><?php if ($this->is('post')) $this->category(',', false);?><?php if ($this->is('post')) echo ' - ';?><?php $this->options->title(); ?><?php if ($this->is('index')) echo ' - '; ?><?php if ($this->is('index')) $this->options->description() ?></title>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('/css/main.css'); ?>">
-    <link rel="<?php if($_COOKIE['night'] != '1'){echo 'alternate ';} ?>stylesheet" href="<?php $this->options->themeUrl('/css/dark.css'); ?>" title="dark">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('/css/prism.css'); ?>">
+    <script src="<?php $this->options->themeUrl('/js/prism.js'); ?>"></script>
+    <!--<link rel="<?php if($_COOKIE['night'] != '1'){echo 'alternate ';} ?>stylesheet" href="<?php $this->options->themeUrl('/css/dark.css'); ?>" title="dark">-->
+    <link rel="<?php if($_COOKIE['night'] != '1'){echo 'alternate ';} ?>stylesheet" href="" title="dark">
     <?php if ($this->options->icoUrl): ?><link rel='icon' href='<?php $this->options->icoUrl() ?>' type='image/x-icon' /><?php endif; ?>
     <?php $this->header("generator=&template=&pingback=&wlw=&xmlrpc=&rss1=&atom=&rss2=/feed"); ?>
 </head>
