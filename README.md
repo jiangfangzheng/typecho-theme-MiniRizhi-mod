@@ -1,2 +1,7 @@
 # typecho-theme-MiniRizhi-mod
-迷你日志  作者：&lt;a target="_blank" href="https://minirizhi.com/">迷你日志&lt;/a> 来源：&lt;a target="_blank" href="https://minirizhi.com/255.html">适合个人日记的主题：日志(更新V2.0)&lt;/a>
+异想家对迷你日志的Typecho主题MiniRizhi的修改版
+
+
+修改点主要为针对自己的博客适配，以及自己喜欢的样式细节微调。
+
+原主题地址：https://minirizhi.com/
