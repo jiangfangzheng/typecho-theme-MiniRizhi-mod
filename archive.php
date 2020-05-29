@@ -15,7 +15,7 @@
 			<ul class="meta">
 				<li><time><?php $this->date('Y-m-d'); ?></time></li>
 				<li><?php $this->category(','); ?></li>
-				<li><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 评论', '%d 评论'); ?></a></li>
+				<!--<li><a href="<?php $this->permalink() ?>#comments"><?php $this->commentsNum('评论', '1 评论', '%d 评论'); ?></a></li>-->
 			</ul>
             <div class="post-excerpt">
     			<?php $this->excerpt(180); ?>

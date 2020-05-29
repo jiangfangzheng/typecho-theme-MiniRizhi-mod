@@ -28,7 +28,8 @@
 			$mon = $mon_tmp;
 			$output .= '<li><span><b>'. $mon .' 月</b></span><ul>'; //输出月份
 		}
-		$output .= '<li>'.date('d日: ',$archives->created).'<a href="'.$archives->permalink .'" title="'. $archives->title .'">'. $archives->title .'</a> <em>('. $archives->commentsNum.' 评论)</em></li>'; //输出文章日期和标题
+		//$output .= '<li>'.date('d日: ',$archives->created).'<a href="'.$archives->permalink .'" title="'. $archives->title .'">'. $archives->title .'</a> <em>('. $archives->commentsNum.' 评论)</em></li>'; //输出文章日期和标题
+		$output .= '<li>'.date('d日: ',$archives->created).'<a href="'.$archives->permalink .'" title="'. $archives->title .'">'. $archives->title .'</a></li>'; //输出文章日期和标题
 	endwhile;
 	$output .= '</ul></li></ul></div>';
 	echo $output;
